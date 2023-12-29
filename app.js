@@ -25,3 +25,26 @@ function clickBtn() {
 }
 
 popUp.onclick = clickBtn;
+
+const myName = document.getElementById("btn");
+function displayName() {
+  alert("babalo ace");
+}
+const output = myName.addEventListener("click", displayName);
+
+// method
+
+const person = {
+  Name: "Babalo",
+  age: 20,
+  details: function () {
+    alert("my name is " + this.Name + " and my years of age is " + this.age);
+  }
+};
+
+// user input
+function userInput() {
+  const userdetails = window.prompt("hello the what is your name");
+  const user = "welcome";
+  alert(user + userdetails);
+}
